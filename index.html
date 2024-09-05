@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Pharmacy</title>
+    <link rel="stylesheet" href="only.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Pharmacy</h1>
+            <nav>
+                <a href="#cart">Cart</a>
+                <a href="#order">Order</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="main-image">
+                <img src="./mainimg.png" alt="Medicine Shop">
+                <h2>Welcome to the Online Pharmacy</h2>
+            </div>
+
+            <form id="orderForm">
+                <!-- Analgesics Section -->
+                <section class="medicine-section" id="analgesics">
+                    <h2>Analgesics</h2>
+                    <div class="medicine-grid">
+                        <div class="medicine-item">
+                            <img src="./Picture1.jpg" alt="Ibuprofen">
+                            <div class="info">
+                                <label for="analgesic1">Ibuprofen - 500 LKR</label>
+                                <input type="number" id="analgesic1" data-price="500" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="Picture2.png" alt="Acetaminophen">
+                            <div class="info">
+                                <label for="analgesic2">Acetaminophen - 320 LKR</label>
+                                <input type="number" id="analgesic2" data-price="320" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="Picture3.jpg" alt="Aspirin">
+                            <div class="info">
+                                <label for="analgesic3">Aspirin - 450 LKR</label>
+                                <input type="number" id="analgesic3" data-price="450" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="Picture4.jpg" alt="Naproxen">
+                            <div class="info">
+                                <label for="analgesic4">Naproxen - 600 LKR</label>
+                                <input type="number" id="analgesic4" data-price="600" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="./Picture 5.jpg" alt="Diclofenac">
+                            <div class="info">
+                                <label for="analgesic5">Diclofenac - 750 LKR</label>
+                                <input type="number" id="analgesic5" data-price="750" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="Picture6.jpg" alt="Ketoprofen">
+                            <div class="info">
+                                <label for="analgesic6">Ketoprofen - 900 LKR</label>
+                                <input type="number" id="analgesic6" data-price="900" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Antibiotics Section -->
+                <section class="medicine-section" id="antibiotics">
+                    <h2>Antibiotics</h2>
+                    <div class="medicine-grid">
+                        <div class="medicine-item">
+                            <img src="./Product7.jpg" alt="Amoxicillin">
+                            <div class="info">
+                                <label for="antibiotic1">Amoxicillin - 380 LKR</label>
+                                <input type="number" id="antibiotic1" data-price="380" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="Product8.jpg" alt="Penicillin">
+                            <div class="info">
+                                <label for="antibiotic2">Penicillin - 420 LKR</label>
+                                <input type="number" id="antibiotic2" data-price="420" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="Product9.jpg" alt="Doxycycline">
+                            <div class="info">
+                                <label for="antibiotic3">Doxycycline - 470 LKR</label>
+                                <input type="number" id="antibiotic3" data-price="470" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="Product10.jpg" alt="Cephalexin">
+                            <div class="info">
+                                <label for="antibiotic4">Cephalexin - 550 LKR</label>
+                                <input type="number" id="antibiotic4" data-price="550" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="Product11.jpg" alt="Azithromycin">
+                            <div class="info">
+                                <label for="antibiotic5">Azithromycin - 620 LKR</label>
+                                <input type="number" id="antibiotic5" data-price="620" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="Product12.jpg" alt="Clarithromycin">
+                            <div class="info">
+                                <label for="antibiotic6">Clarithromycin - 680 LKR</label>
+                                <input type="number" id="antibiotic6" data-price="680" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Antidepressants Section -->
+                <section class="medicine-section" id="antidepressants">
+                    <h2>Antidepressants</h2>
+                    <div class="medicine-grid">
+                        <div class="medicine-item">
+                            <img src="Product13.jpg" alt="Fluoxetine">
+                            <div class="info">
+                                <label for="antidepressant1">Fluoxetine - 730 LKR</label>
+                                <input type="number" id="antidepressant1" data-price="730" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="./Product14.jpg" alt="Sertraline">
+                            <div class="info">
+                                <label for="antidepressant2">Sertraline - 780 LKR</label>
+                                <input type="number" id="antidepressant2" data-price="780" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="./Product15.jpg" alt="Paroxetine">
+                            <div class="info">
+                                <label for="antidepressant3">Paroxetine - 820 LKR</label>
+                                <input type="number" id="antidepressant3" data-price="820" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="./Product16.jpg" alt="Citalopram">
+                            <div class="info">
+                                <label for="antidepressant4">Citalopram - 860 LKR</label>
+                                <input type="number" id="antidepressant4" data-price="860" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="./Product17.jpg" alt="Escitalopram">
+                            <div class="info">
+                                <label for="antidepressant5">Escitalopram - 910 LKR</label>
+                                <input type="number" id="antidepressant5" data-price="910" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="./Product18.jpg" alt="Venlafaxine">
+                            <div class="info">
+                                <label for="antidepressant6">Venlafaxine - 960 LKR</label>
+                                <input type="number" id="antidepressant6" data-price="960" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Antihistamines Section -->
+                <section class="medicine-section" id="antihistamines">
+                    <h2>Antihistamines</h2>
+                    <div class="medicine-grid">
+                        <div class="medicine-item">
+                            <img src="./Product19.jpg" alt="Diphenhydramine">
+                            <div class="info">
+                                <label for="antihistamine1">Diphenhydramine - 380 LKR</label>
+                                <input type="number" id="antihistamine1" data-price="380" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="./Product20.jpg" alt="Loratadine">
+                            <div class="info">
+                                <label for="antihistamine2">Loratadine - 420 LKR</label>
+                                <input type="number" id="antihistamine2" data-price="420" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="./Product21.jpg" alt="Cetirizine">
+                            <div class="info">
+                                <label for="antihistamine3">Cetirizine - 470 LKR</label>
+                                <input type="number" id="antihistamine3" data-price="470" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="./Product22.jpg" alt="Fexofenadine">
+                            <div class="info">
+                                <label for="antihistamine4">Fexofenadine - 550 LKR</label>
+                                <input type="number" id="antihistamine4" data-price="550" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="./Product23.jpg" alt="Desloratadine">
+                            <div class="info">
+                                <label for="antihistamine5">Desloratadine - 620 LKR</label>
+                                <input type="number" id="antihistamine5" data-price="620" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="./Product24.jpg" alt="Chlorpheniramine">
+                            <div class="info">
+                                <label for="antihistamine6">Chlorpheniramine - 680 LKR</label>
+                                <input type="number" id="antihistamine6" data-price="680" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Antihypertensives Section -->
+                <section class="medicine-section" id="antihypertensives">
+                    <h2>Antihypertensives</h2>
+                    <div class="medicine-grid">
+                        <div class="medicine-item">
+                            <img src="./Product27.jpg" alt="Lisinopril">
+                            <div class="info">
+                                <label for="antihypertensive1">Lisinopril - 640 LKR</label>
+                                <input type="number" id="antihypertensive1" data-price="640" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="./Product28.jpg" alt="Losartan">
+                            <div class="info">
+                                <label for="antihypertensive2">Losartan - 680 LKR</label>
+                                <input type="number" id="antihypertensive2" data-price="680" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="./Product29.png" alt="Amlodipine">
+                            <div class="info">
+                                <label for="antihypertensive3">Amlodipine - 730 LKR</label>
+                                <input type="number" id="antihypertensive3" data-price="730" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="./Product30.jpg" alt="Hydrochlorothiazide">
+                            <div class="info">
+                                <label for="antihypertensive4">Hydrochlorothiazide - 780 LKR</label>
+                                <input type="number" id="antihypertensive4" data-price="780" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="./Product31.jpg" alt="Metoprolol">
+                            <div class="info">
+                                <label for="antihypertensive5">Metoprolol - 820 LKR</label>
+                                <input type="number" id="antihypertensive5" data-price="820" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="./Product32.jpg" alt="Enalapril">
+                            <div class="info">
+                                <label for="antihypertensive6">Enalapril - 880 LKR</label>
+                                <input type="number" id="antihypertensive6" data-price="880" min="0" value="0">
+                                <button type="button" class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="cart">
+                    <h2>Cart</h2>
+                    <table id="cartTable">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cartItems">
+                            <!-- Cart items will be inserted here by JavaScript -->
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Total Price</td>
+                                <td id="totalPrice">0.00 LKR</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="buttons">
+                        <button id="cancelButton">Cancel</button>
+                        <button id="buyNowButton">Buy Now</button>
+                    </div>
+                </section>
+            </form>
+
+            <!-- Buttons for Add to Favourites and Apply Favourites -->
+            <section class="buttons-section">
+                <button type="button" id="addToFavourites">Add to Favourites</button>
+                <button type="button" id="applyFavourites">Apply Favourites</button>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 Galle Pharmacy. All rights reserved.</p>
+    </footer>
+</body>
+</html>
